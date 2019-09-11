@@ -1,0 +1,10 @@
+include HISTORY.rst
+include MANIFEST.in
+include entrypoint.py
+include README.txt
+
+recursive-exclude mypkg/* *.py
+
+global-include *.pyd *.so *.ini *.nse
+global-include __init__.py __init__.pyc requirements.txt
+global-exclude *.c
